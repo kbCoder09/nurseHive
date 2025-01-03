@@ -1,1 +1,73 @@
-/* Inital page styles */
+/* General Styles for the Navbar */
+nav {
+  background-color:#D7DEF1; /* Background color for the navbar */
+  padding: 1rem 2rem; /* Spacing around the navbar */
+  display: flex;
+  justify-content: space-between; /* Space between logo and links */
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for a subtle 3D effect */
+}
+
+/* Logo Styling */
+nav h1 {
+  color: #F9E6E2; /* Light color for logo text */
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+/* Navigation List Styling */
+nav ul {
+  list-style: none; /* Remove default list styling */
+  display: flex; /* Align the list items horizontally */
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Links Styling */
+nav ul li {
+  margin-left: 2rem; /* Add space between each list item */
+}
+
+nav ul li a {
+  color: #000; /* Soft accent color for links */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.1rem; /* Font size for links */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+  color: #B1CFEB; /* Lighter blue on hover */
+}
+
+/* Active Link (optional) */
+nav ul li a.active {
+  color: #BFBBCB; /* Subtle color for active link */
+  font-weight: bold; /* Optional: makes the active link stand out */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: flex-start;
+  }
+
+  nav h1 {
+    font-size: 1.5rem; /* Adjust logo size for smaller screens */
+    margin-bottom: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack links vertically */
+    width: 100%; /* Ensure links take up full width */
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 1rem; /* Add space between items vertically */
+  }
+
+  nav ul li a {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+}
